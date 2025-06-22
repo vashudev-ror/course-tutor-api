@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :tutor do
-    first_name { "MyString" }
-    last_name { "MyString" }
-    email { "MyString" }
-    course { nil }
+    first_name { "John" }
+    last_name  { "Doe" }
+    email      { Faker::Internet.unique.email }
+    association :course
   end
 end

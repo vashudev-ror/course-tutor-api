@@ -19,7 +19,7 @@ gem "rack-cors"
 
 # Optional: for JSON serialization
 # gem "jbuilder"
-
+gem "pry"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
 
@@ -28,6 +28,7 @@ group :development, :test do
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "faker"
+  gem 'shoulda-matchers', '~> 5.0'
   gem "simplecov", require: false
 
   # Linting & style

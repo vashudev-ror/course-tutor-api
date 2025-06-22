@@ -10,6 +10,7 @@ class JsonWebToken
     body = JWT.decode(token, SECRET_KEY)[0]
     ActiveSupport::HashWithIndifferentAccess.new(body)
   rescue JWT::DecodeError => e
-    raise StandardError, "Invalid token: #{e.message}"
+    Rails.logger.error "JWT DecodeError: #{e.message}"
+    raise StandardError, "Invalid token"
   end
 end

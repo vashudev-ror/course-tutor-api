@@ -130,7 +130,9 @@ Style/SpecialGlobalVars:
 # SupportedStyles: single_quotes, double_quotes
 Style/StringLiterals:
   Enabled: false
-
+  
+RSpec/MultipleExpectations:
+  Enabled: false
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: .
