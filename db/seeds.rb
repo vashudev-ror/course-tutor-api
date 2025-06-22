@@ -7,3 +7,13 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+unless User.exists?(email: 'admin@example.com')
+  User.create!(
+    email: 'admin@example.com',
+    password: 'password123',
+    password_confirmation: 'password123'
+  )
+  puts "Seeded default user: admin@example.com / password123"
+else
+  puts "User already exists: admin@example.com"
+end
