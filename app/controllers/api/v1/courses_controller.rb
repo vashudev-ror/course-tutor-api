@@ -1,6 +1,8 @@
 module Api
   module V1
     class CoursesController < ApplicationController
+      before_action :authenticate_user!
+
       def index
         courses = Course.includes(:tutors).page(params[:page]).per(params[:per_page] || 10)
 

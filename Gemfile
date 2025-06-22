@@ -6,6 +6,8 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 gem 'pg', '>= 1.1'
 gem "puma", ">= 5.0"
 
+gem 'bcrypt', '~> 3.1.7'
+
 # JSON Web Tokens (JWT Auth)
 gem "jwt"
 
