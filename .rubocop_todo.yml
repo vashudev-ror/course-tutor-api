@@ -58,7 +58,7 @@ Metrics/CyclomaticComplexity:
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
   Max: 13
-  
+
 Metrics/ClassLength:
   Max: 100
 
@@ -73,6 +73,8 @@ Style/BlockComments:
   Exclude:
     - 'spec/spec_helper.rb'
 
+Style/Documentation:
+  Enabled: false
 # Offense count: 3
 # Configuration parameters: AllowedConstants.
 

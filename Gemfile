@@ -10,6 +10,7 @@ gem "puma", ">= 5.0"
 gem "jwt"
 
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'kaminari'
 
 # Rack CORS for API accessibility (optional but good practice)
 gem "rack-cors"
