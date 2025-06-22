@@ -9,6 +9,8 @@ gem "puma", ">= 5.0"
 # JSON Web Tokens (JWT Auth)
 gem "jwt"
 
+gem 'active_model_serializers', '~> 0.10.0'
+
 # Rack CORS for API accessibility (optional but good practice)
 gem "rack-cors"
 
